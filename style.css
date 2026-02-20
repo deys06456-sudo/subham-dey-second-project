@@ -1,0 +1,985 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Metropolis";
+    src: url("assets/fonts/metropolis/Metropolis-Regular.otf")
+    format("opentype");
+}
+:root {
+  --primary-pink: #ED017F;
+  --black: #010101;
+  --dark-gray: #363940;
+  --medium-gray: #676767;
+  --deep-gray: #343434;
+  --light-gray: #999999;
+  --light-pink-bg: #FEF9FC;
+  --white: #FFFFFF;
+  --primary-blue: #4A71FB;
+  --danger-red: #FF0000;
+  --secondary-blue: #4B7FCD;
+  --light-sky-blue: #87CEFA;
+}
+
+body{
+    font-family: "Metropolis";
+    font-size: 15px;
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1398px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+h1{
+    max-width: 435px;
+    font-family: "Metropolis";
+    font-size: 57px;
+    color: var(--black);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-top: 0;
+}
+h2{
+    
+    font-family: "Metropolis";
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--deep-gray);
+    line-height: 1.1;
+    padding-top: 116px;
+    text-align: center
+}
+.main-heading p{
+    max-width: 622px;
+    font-family: "Metropolis";
+    font-size: 16px;
+    color: var(--light-gray);
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 0 auto;
+    margin-top: 26px;
+    margin-bottom: 90px;
+    text-align: center
+}
+h3{
+    font-family: "Metropolis";
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--dark-gray);
+    padding-top: 18px;
+}
+.heading p{
+    max-width: 391px;
+    font-family: "Metropolis";
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--medium-gray);
+    margin-top: 23px;
+    line-height: 1.3;
+    
+}
+.header-section{
+   padding-top: 120px;
+   position: relative;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.col60{
+    max-width: 60%;
+    flex: 0 0 60%;
+    padding: 0 15px;
+}
+.col40{
+    max-width: 40%;
+    flex: 0 0 40%;
+    padding: 0 15px;
+}
+.col20{
+    max-width: 20%;
+    flex: 0 0 20%;
+    padding: 0 15px;
+}
+.col25{
+    max-width: 25%;
+    flex: 0 0 25%;
+    padding: 0 15px;
+}
+ul {
+    list-style: none;
+}
+.logo a{
+    max-width: 175px;
+    display: block;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.navlinks a{
+    display: inline-block;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    font-family: "Metropolis";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.6;
+    
+}
+
+.navlinks li a{
+    padding:0 20px;
+}
+.navlinks li {
+    margin: 14PX 0;
+}
+.navlinks a{
+    text-transform: uppercase;
+    color: var(--black);
+}
+.navlinks a:hover{
+    color: var(--primary-pink);
+}
+.headerbtn{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.headerbtn i{
+    font-size: 18px;
+    color: var(--primary-pink);
+}
+.cmn-btn {
+    margin: 17px 36px;
+    display: inline-block;
+    border-radius: 4px;
+    background: var(--primary-pink);
+    padding: 16px 30px;
+    transition: 0.5s ease;     
+
+    font-family: "Metropolis";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--white);
+}
+.cmn-btn:hover{
+    background: var(--light-sky-blue);
+}
+.header-bottom a{
+    font-family: "Metropolis";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.header-bottom{
+    display: inline-block;
+    border-radius: 4px;
+    background: var(--primary-pink);
+    transition: 0.5s ease; 
+    padding: 13px 23px;
+}
+.header-bottom:hover{
+    background-color: var(--light-sky-blue);
+}
+.cmn-bottom{
+    display: flex;
+    /* gap: 20px; */
+    margin-top: 38px;
+}
+.header-bottom{
+    margin-right: 20px;
+}
+.header-cmn-btn a{
+    font-family: "Metropolis";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: var(--primary-pink);
+}
+.header-cmn-btn {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid  var(--primary-pink);
+    padding: 13px 20px;
+    transition: 0.5s ease;
+}
+.header-cmn-btn:hover{
+    background-color: var(--light-sky-blue);
+}
+.call a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5px; */
+    width: 18%;
+}
+.call img{
+    max-width: 24px;
+}
+.call a img{
+    margin-right: 11px;
+}
+.call a{
+    font-family: "Metropolis";
+    font-size: 17px;
+    font-weight: 600;
+    color: #010101;
+    line-height: 1.2;
+}
+/* .call::after {
+  position: absolute;
+}
+.call{
+    display: flex;
+    gap: 11px;
+    position: relative;
+} */
+
+
+.call p:hover{
+    color: var(--primary-pink);
+}
+
+.facebook{
+    color: var(--secondary-blue);
+}
+.youtube{
+    color: var(--danger-red);
+}
+.linkedin{
+    color: var(--primary-blue);
+}
+.instagram{
+    color: var(--primary-pink);
+}
+.icon-menu{
+    display: flex;
+    margin-top: 52px;
+    display: flex;
+    /* gap: 44px; */
+    align-items: center;
+}
+.menu{
+    display: flex;
+    /* gap: 16px; */
+    margin-left: 44px;
+}
+.menu a{
+    padding: 0 8px;
+}
+.home p{
+    margin-left: 11px;
+    font-family: "Metropolis";
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    max-width: 101px;
+    color: var(--deep-gray);
+}
+.car p{
+    margin: 11px;
+    font-family: "Metropolis";
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    max-width: 88px;
+}
+.property-right{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.light-bottom{
+    position: absolute;
+    right: 50px;
+    top: 120px;
+}
+.light-btn{
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+.light-btn,
+.light-bottom{
+    display: inline-flex;
+    align-items: center;
+    padding: 25px 32px;
+    border-radius: 55px;
+    background-color: var(--white);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.car,
+.home{
+    display: flex;
+    align-items: center;
+}
+/* .Digital, */
+/* .Teamwork, */
+/* .Corporate, */
+/* .Diversity, */
+/* .Technology, */
+/* .Demonstrate, */
+.collaboration p,
+.integrity p{
+    max-width: 160px;
+    font-family: "Metropolis";
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--light-gray);
+    line-height: 1.7;
+    margin-top: 18px;
+    margin-bottom: 41px;
+}
+ 
+.technology p,
+.demonstrate p{
+    margin-top: 18px;
+    max-width: 160px;
+    font-family: "Metropolis";
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--light-gray);
+    line-height: 1.7;
+    margin-bottom: 58px;
+}
+
+.corporate p,
+.diversity p{
+    margin-top: 18px;
+    max-width: 160px;
+    font-family: "Metropolis";
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--light-gray);
+    line-height: 1.7;
+    margin-bottom: 60px; 
+}
+
+.digital p,
+.teamwork p{
+    margin-top: 18px;
+    max-width: 160px;
+    font-family: "Metropolis";
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--light-gray);
+    line-height: 1.7;
+    margin-bottom: 45px;
+}
+.our-services p{
+    max-width: 791px;
+    font-family: "Metropolis";
+    font-size: 16px;
+    color: var(--light-gray);
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 69px;
+}
+  /* title */
+.auto-loan h3,
+.deposit-schemes h3,
+.personal-loan h3,
+.schemes h3{
+    max-width: 195px;
+    margin-bottom: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* padding-bottom: 31px; */
+}
+
+.arrow-btn {
+    /* align-self: flex-end; */
+    position: absolute;
+    right: 40px;
+    bottom: 90px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: var(--primary-pink);
+    border-radius: 50%;
+    color: var(--white);
+    transition: 0.3s ease;
+    /* margin-left: auto; */
+}
+
+.main-service{
+    background-color: var(--light-pink-bg);
+    padding: 40px 30px;
+}
+
+.schemes,
+.personal-loan,
+.deposit-schemes,
+.auto-loan {
+    position: relative;
+    padding-bottom: 60px;
+}
+.schemes img,
+.personal-loan img,
+.deposit-schemes img,
+.auto-loan img{
+    transition: 0.3s ease;
+}
+.schemes:hover img,
+.personal-loan:hover img,
+.deposit-schemes:hover img,
+.auto-loan:hover img {
+    transform: scale(1.08);
+}
+.arrow-btn:hover {
+    background: lightskyblue;
+}
+.percentage-heading p{
+    font-family: "Metropolis";
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--light-gray);
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 89px;
+}
+.personal h3{
+    max-width: 172px;
+    font-size: 40px;
+    color: var(--primary-pink);
+    font-weight: 900;
+    font-family: "Metropolis";
+    margin-bottom: 10px;
+}
+.personal p{
+    font-family: "Metropolis";
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--medium-gray);
+    line-height: 1.5;
+    margin-bottom: 67px;
+    max-width: 172px;
+    text-transform: uppercase;
+}
+/* title */
+.equity h3{
+    max-width: 172px;
+    font-size: 40px;
+    color: var(--deep-gray);
+    font-weight: 900;
+    font-family: "Metropolis";
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.equity p,
+.ratio p,
+.capitalization p{
+    margin-top: 8px;
+    max-width: 172px;
+    font-family: "Metropolis";
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--medium-gray);
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.rating p{
+    margin-bottom: 85px;
+    max-width: 172px;
+    font-family: "Metropolis";
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--medium-gray);
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+/* title */
+.portfolio h3,
+.coverage h3,
+.deposit h3{
+    max-width: 172px;
+    font-size: 40px;
+    color: var(--deep-gray);
+    font-weight: 900;
+    font-family: "Metropolis";
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.portfolio p,
+.coverage p{
+    max-width: 172px;
+    font-family: "Metropolis";
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--medium-gray);
+    line-height: 1.5;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.deposit p{
+    max-width: 172px;
+    font-family: "Metropolis";
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--medium-gray);
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+/* title */
+.ratio h3,
+.capitalization h3,
+.rating h3{
+    max-width: 172px;
+    font-size: 40px;
+    color: var(--deep-gray);
+    font-weight: 900;
+    font-family: "Metropolis";
+}
+.footer-heading{
+    font-family: "Metropolis";
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    padding-top: 90px;
+}
+.footer p{
+    max-width: 180px;
+    font-family: "Metropolis";
+    color: var(--medium-gray);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 46px;
+}
+.footer-item {
+    display: flex;
+    /* gap: 16px; */
+    margin-bottom: 86px;
+}
+.footer-item a{
+    padding: 0 8px;
+}
+.products{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Metropolis";
+    line-height: 1.2;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+    padding-top: 90px;
+}
+.products-itam a,
+.get-Started-itam a,
+.about-itam a{
+    font-family: "Metropolis";
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--medium-gray);    
+}
+.products-itam li,
+.get-Started-itam li,
+.about-itam li{
+    margin-top: 20px;
+}
+.get-Started,
+.about{
+    padding-top: 90px;
+    max-width: 102px;
+    font-family: "Metropolis";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--dark-gray);
+}
+.footer-heading:hover,
+.products:hover,
+.get-Started:hover,
+.about:hover{
+    color: var(--primary-pink);
+}
+.phone{
+    padding-top: 160px;
+    display: flex;
+    /* justify-content: flex-end;       */
+}
+.phone a img{ 
+    margin-right: 11px;
+}
+.phone a{
+    display: flex;
+    max-width: 50px;
+    font-family: "Metropolis";
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 1.2;
+    
+}
+.phone a:hover{
+    color: var(--primary-pink);
+}
+
+     /* ============================= responsive ===================================     */
+
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 42px;
+  }
+  .light-bottom{
+    right: -12px;
+    top: 80px;
+  }
+  
+}
+
+
+@media (max-width: 991px) {
+    
+    .col40{
+        margin: 0 auto;
+    }
+    .col60{
+        margin-top: 90px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .light-btn{
+        left: 30px;
+        
+    }
+    .navbar-links{
+        display: none;
+    }
+    .light-bottom{
+        margin-top: 220px;
+        right: 30px !important;
+    }
+    
+    .col25{
+       flex: 0 0 50%;
+       max-width: 50%;
+    }
+    h1 {
+        max-width: 100%;
+        font-size: 32px;
+        text-align: center;
+    }
+    .icon-menu{
+       margin: 20px auto 0;
+       margin-left: 50px;
+    }
+    .heading p{
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    
+    
+    .integrity,
+    .collaboration,
+    .demonstrate,
+    .technology,
+    .diversity,
+    .corporate,
+    .teamwork,
+    .digital{
+        max-width: 100%;
+        text-align: center;
+    }
+    .integrity p,
+    .collaboration p,
+    .demonstrate p,
+    .technology p,
+    .diversity p,
+    .corporate p,
+    .teamwork p, 
+    .digital p{
+        max-width: 100%;
+        text-align: center;
+    }
+    .main-section .col25 > div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;   
+    }
+    .services .col25{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    /* .percentage .col25{
+        flex: 0 0 50%;
+        max-width: 50%;
+    } */
+    .personal h3,
+    .equity h3,
+    .portfolio h3,
+    .ratio h3,
+    .coverage h3,
+    .capitalization h3,
+    .deposit h3,
+    .rating h3{
+        max-width: 100%;
+        text-align: center;
+    }
+    .personal p,
+    .equity p,
+    .portfolio p,
+    .ratio p,
+    .coverage p,
+    .capitalization p,
+    .deposit p,
+    .rating p{
+        max-width: 100%;
+        text-align: center;
+    }
+    .col20 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    /* .footer .col25{
+        flex: 0 0 50%;
+        max-width: 50%;
+    } */
+    
+         
+    /* h1 {
+        max-width: 50%;
+        font-size: 40px;
+        text-align: center;
+    } */
+    .light-bottom{
+        top: -80px;
+    }
+    .light-btn{
+        top: 60px;
+    }
+    .cmn-bottom{
+        max-width: 100%;
+        justify-content: center;
+    }
+    .footer .col20 > div{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .footer p{
+        max-width: 100%;
+        text-align: center;
+    }
+    .footer-item li{
+        max-width: 100%;
+        text-align: center;
+    }
+    .facebook,
+    .youtube,
+    .linkedin,
+    .instagram{
+        margin-bottom: 10px;
+    }
+    .products-itam li{
+        max-width: 100%;
+        text-align: center;
+    }
+    .get-Started,
+    .about{
+        max-width: 100%;
+        text-align: center;
+    }
+    .get-Started-itam li,
+    .about-itam li{
+        max-width: 100%;
+        text-align: center;
+    }
+    .phone a{ 
+        max-width: 100%;
+        text-align: center;
+    }
+    .services figure{
+        text-align: center;
+    }
+
+    .services figure img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .equity p,
+    .ratio p,
+    .capitalization p{
+        margin-bottom: 70px;
+    }
+    .phone a{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+/* mobile view */
+
+@media (max-width: 769px) {
+
+    .row {
+        margin: 0;
+    }
+    .arrow-btn {
+    position: static;
+    margin-top: 15px;
+    }
+    
+    .col60,
+    .col40,
+    .col25,
+    .col20 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    h1 {
+        max-width: 100%;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .heading p{
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .figure{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+        
+    }
+
+    h2 {
+        font-size: 28px;
+        padding-top: 60px;
+    }
+    .light-btn,
+    .light-bottom {
+        max-width: 100%;
+        text-align: center;
+        position: static;
+        margin-top: 20px;
+    }
+    .property-right {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .equity p,
+    .ratio p,
+    .capitalization p{
+        margin-bottom: 60px;
+    }
+}
+
+/* small mobile */
+
+@media (max-width: 576px) {
+
+    .navbar {
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .icon-menu {
+        gap: 20px;
+    }
+    /* .header-bottom{
+        margin-bottom: 10px;
+    } */
+    
+    /* .light-btn{
+        margin-bottom: 30px;
+    } */
+
+    /* .header-cmn-btn{
+        padding: 10px 15px;
+    } */
+}
+
+@media (max-width: 480px) {
+
+  .navbar {
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 0 8px;
+  }
+
+}
